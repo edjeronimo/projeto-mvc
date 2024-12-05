@@ -1,4 +1,4 @@
-from view.login_view import Login
+from view.aluno_view import AlunoView
 
 if __name__ == '__main__':
-    Login().mainloop()
+    AlunoView().mainloop()

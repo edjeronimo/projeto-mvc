@@ -7,3 +7,5 @@ class Login(Tk):
 
         self.img = PhotoImage(file="assets/imagens/cadeado.png")
         Label(self,image=self.img).pack()
+
+#Login().mainloop()
