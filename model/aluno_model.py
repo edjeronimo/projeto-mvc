@@ -1,14 +1,16 @@
+class Aluno:
+    def _init_(self, nome, email, matricula):
+        self.nome = nome
+        self.email = email
+        self.matricula = matricula
 
-class AlunoModel:
+class CadastroAlunoModel:
+    def _init_(self):
+        self.alunos = []
 
-    __nome = str
-    __matricula = int
-    __email = str
+    def adicionar_aluno(self, nome, email, matricula):
+        aluno = Aluno(nome, email, matricula)
+        self.alunos.append(aluno)
 
-    def __init__(self):
-        ...
-
-    def enviar(self):
-        #salvou os dados
-        return 1 #Sucesso!
-
+    def listar_alunos(self):
+        return self.alunos
